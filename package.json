@@ -2,11 +2,13 @@
   "name": "with-typescript-styled-components",
   "version": "1.0.0",
   "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "start": "next start"
+    "dev": "next -p 3333",
+    "run:app": "next build && next start -p 3333",
+    "run:api": "json-server --watch api.json"
   },
   "dependencies": {
+    "axios": "^0.21.1",
+    "json-server": "^0.16.3",
     "next": "latest",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",

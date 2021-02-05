@@ -1,0 +1,19 @@
+{
+  "users": [
+    {
+      "name": "pedro",
+      "username": "pedrinhodev",
+      "date": "05/02/2021"
+    },
+    {
+      "name": "joão",
+      "username": "joaodev",
+      "date": "05/02/2021"
+    },
+    {
+      "name": "kauã",
+      "username": "kauadev",
+      "date": "05/02/2021"
+    }
+  ]
+}
