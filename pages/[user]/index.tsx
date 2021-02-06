@@ -4,23 +4,34 @@ import { User, UserProps } from "../../@types";
 import api from "../../service/api";
 import ErrorPage from 'next/error';
 
-const UserInvitation: React.FC<UserProps> = (props) => {
+import { Container, TicketContainer, ContentContainer } from "../../styles/pages/user";
+
+const UserInvitation: React.FC<UserProps> = ({ user }) => {
   const router = useRouter();
 
   if(router.isFallback) {
     return <h1 style={{ color: '#FFF' }}>Carregando...</h1>
   } else {
-    if(!props.user.name) {
+    if(!user.name) {
       return (
         <ErrorPage statusCode={404} />
       );
     }
     return (
-      <div style={{ color: '#FFF' }}>
-        <h1>{props.user.name}</h1>
-        <h2>{props.user.username}</h2>
-        <p>{props.user.date}</p>
-      </div>
+      <Container>
+        <TicketContainer>
+          <div className="ticket-content-wrapper">
+            <img src="/logo-dl.png" className="logo-dl" alt="Logo dldreams"/>
+            <ContentContainer>
+              <h1 className="content-title">Ticket dldreams de { user.name }</h1>
+
+              <p className="content-description">Este ticket é estático e atualiza automaticamente caso haja alteração na API</p>
+            
+              <p className="content-date">Criado em: { user.date }</p>
+            </ContentContainer>
+          </div>
+        </TicketContainer>
+      </Container>
     );
   }
 };

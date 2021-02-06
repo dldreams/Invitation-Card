@@ -1,28 +1,33 @@
-# TypeScript & Styled Components Next.js example
+<h1 style="text-align: center">
+  <img src="./public/logo-dl.png" />
+</h1>
 
-This is a really simple project that show the usage of Next.js with TypeScript and Styled Components.
+# Página estática que atualiza sozinha
 
-## Deploy your own
+Este é um exemplo de página estática que atualiza sozinha utilizando a tecnologia de SSG do Next.js
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+<img src="./public/example.png" />
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-typescript-styled-components&project-name=with-typescript-styled-components&repository-name=with-typescript-styled-components)
+Para exemplificar essa funcionalidade do Next utilizamos um ticket que atualiza suas informações caso haja uma alteração pela API
 
-## How to use it?
+<!-- ## Vídeo no youtube
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+Temos um video em nosso canal do youtube ensinando passo a passo de como criar esse ticket
+
+- [Vídeo](https://youtube.com/) -->
+
+## Como usar?
 
 ```bash
-npx create-next-app --example with-typescript-styled-components with-typescript-styled-components-app
-# or
-yarn create next-app --example with-typescript-styled-components with-typescript-styled-components-app
+$ npm i
+$ npm run run:api
+$ npm run run:app
+# ou
+$ yarn i
+$ yarn run:api
+$ yarn run:app
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+Depois acesse o arquivo `api.json` e copie um "username" de algum usuario lá dentro e cole na sua url. Ex: `http://localhost:3333/kauadev`
 
-## Notes
-
-This is an amalgamation of the 2 existing examples:
-
-- [with-typescript](https://github.com/vercel/next.js/tree/canary/examples/with-typescript)
-- [with-styled-components](https://github.com/vercel/next.js/tree/canary/examples/with-styled-components)
+Após acessar o ticket vá no arquivo `api.json` e altere por exemplo o "name" desse usuario e dê F5 na página do ticket e pronto!

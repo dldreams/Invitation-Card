@@ -1,7 +1,7 @@
 {
   "users": [
     {
-      "name": "pedro",
+      "name": "pedro almeida",
       "username": "pedrinhodev",
       "date": "05/02/2021"
     },
@@ -13,6 +13,16 @@
     {
       "name": "kauã",
       "username": "kauadev",
+      "date": "05/02/2021"
+    },
+    {
+      "name": "vitor",
+      "username": "vitordev",
+      "date": "05/02/2021"
+    },
+    {
+      "name": "ricardo",
+      "username": "ricardodev",
       "date": "05/02/2021"
     }
   ]
